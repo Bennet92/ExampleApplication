@@ -22,4 +22,10 @@ public class MainActivity extends AppCompatActivity {
             intent.putExtra(EXTRA_MESSAGE, message);
             startActivity(intent);
         }
+
+        public void appNotResp(View view) throws InterruptedException {
+            synchronized (this){
+                wait(6);
+            };
+        }
     }
