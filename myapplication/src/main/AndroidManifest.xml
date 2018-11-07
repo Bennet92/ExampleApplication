@@ -26,7 +26,8 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-        <activity android:name=".menuListe"></activity>
+        <activity android:name=".menuListe" />
+        <activity android:name=".menuDynamischeListe"></activity>
     </application>
 
 </manifest>
