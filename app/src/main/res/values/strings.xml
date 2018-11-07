@@ -2,5 +2,4 @@
     <string name="app_name">ExampleApplication</string>
     <string name="edit_message">Enter a message</string>
     <string name="button_send">Send</string>
-    <string name="button_open_activity">Thread</string>
 </resources>
