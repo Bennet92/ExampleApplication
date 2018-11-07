@@ -1,9 +1,10 @@
 package com.example.myapplication;
 
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -19,8 +20,18 @@ public class menuListe extends AppCompatActivity {
     }
 
     private void listeFuellen(){
-        ListView unsereListe = findViewById(R.id.listView);
-        ArrayAdapter<String> meinAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_expandable_list_item_1, meinStringArray);
+        ListView unsereListe = (ListView) findViewById(R.id.listView);
+        final ArrayAdapter<String> meinAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_expandable_list_item_1, meinStringArray);
         unsereListe.setAdapter(meinAdapter);
+        unsereListe.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                //System.out.println("Funktioniert!");
+                String item = (String) parent.getItemAtPosition(position);
+                Snackbar snackbar = Snackbar.make(view, item + " an Position " + position + " wrude gedrückt. ", Snackbar.LENGTH_LONG);
+                snackbar.show();
+            }
+        });
     }
+
 }

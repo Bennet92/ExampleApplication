@@ -99,6 +99,9 @@ public class MainActivity extends AppCompatActivity
         }else if (id == R.id.menu_liste) {
             Intent intent = new Intent(this, menuListe.class);
             startActivity(intent);
+        }else if (id == R.id.dynamicList) {
+            Intent intent = new Intent(this, menuDynamischeListe.class);
+            startActivity(intent);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
