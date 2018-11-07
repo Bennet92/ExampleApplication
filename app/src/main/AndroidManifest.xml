@@ -22,6 +22,12 @@
                 android:name="android.support.PARTENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
+        <activity android:name=".QuestionsActivity">
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARTENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
     </application>
 
 </manifest>
