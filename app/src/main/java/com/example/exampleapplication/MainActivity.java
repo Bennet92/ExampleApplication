@@ -28,4 +28,9 @@ public class MainActivity extends AppCompatActivity {
                 wait(6);
             };
         }
+
+        public void openThreadActivity(View view){
+        Intent intent = new Intent(this, StartThreadActivity.class);
+        startActivity(intent);
+        }
     }
