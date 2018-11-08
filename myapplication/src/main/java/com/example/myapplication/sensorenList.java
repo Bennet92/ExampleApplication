@@ -34,6 +34,10 @@ public class sensorenList extends AppCompatActivity {
 
         for (Sensor sensor : meineSensoren) {
             meineSauberenSensoren.add(sensor.getName());
+            meineSauberenSensoren.add("" + sensor.getType());
+            meineSauberenSensoren.add(sensor.getVendor());
+            meineSauberenSensoren.add("");
+
         }
 
 
