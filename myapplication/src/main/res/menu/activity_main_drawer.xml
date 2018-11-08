@@ -41,5 +41,8 @@
     <item
         android:id="@+id/dynamicList"
         android:title="DynamischeListe" />
+    <item
+        android:id="@+id/sensorList"
+        android:title="Sensoren" />
 
 </menu>

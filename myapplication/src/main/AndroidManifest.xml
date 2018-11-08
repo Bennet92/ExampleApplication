@@ -27,7 +27,8 @@
                 android:value=".MainActivity" />
         </activity>
         <activity android:name=".menuListe" />
-        <activity android:name=".menuDynamischeListe"></activity>
+        <activity android:name=".menuDynamischeListe" />
+        <activity android:name=".sensorenList"></activity>
     </application>
 
 </manifest>
